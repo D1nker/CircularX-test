@@ -9,3 +9,11 @@ Les points qui ont été bloquants :
 - L'extension chrome Vue qui ne m'affichait aucune trace de debug
 - CSS
 - J'en ai peut-être trop fait avec Axios & le PostRepository, j'aurai pu simplement utilisé le wrapper fetch()
+
+
+J'ai voulu tenté cet exercice avec 2 technos que je maitrise peu : Vue 3 et Tailwind - je pense que cela m'a été préjudiciable :)
+
+Bonne lecture, et merci.
+
+Quentin F
+
