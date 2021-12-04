@@ -1,0 +1,11 @@
+Hello - ceci est un simple fichier texte comprenant mon avancé et/ou les points bloquants
+
+** L'exercice n'est clairement pas terminé malheuresement **
+
+Les points qui ont été bloquants :
+
+- Config global de l'app (choix plugin)
+- Vue-Router v4
+- L'extension chrome Vue qui ne m'affichait aucune trace de debug
+- CSS
+- J'en ai peut-être trop fait avec Axios & le PostRepository, j'aurai pu simplement utilisé le wrapper fetch()
