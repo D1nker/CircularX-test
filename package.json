@@ -1,5 +1,6 @@
 {
-  "name": "my-vue-app",
+  "name": "circularx-test",
+  "author": "D1nker",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
