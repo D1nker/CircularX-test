@@ -1,6 +1,6 @@
 Hello - ceci est un simple fichier texte comprenant mon avancé et/ou les points bloquants
 
-** L'exercice n'est clairement pas terminé malheuresement **
+** L'exercice n'est clairement pas terminé malheureusement **
 
 Les points qui ont été bloquants :
 
