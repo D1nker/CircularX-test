@@ -1,0 +1,19 @@
+{
+  "name": "my-vue-app",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "unplugin-auto-import": "^0.5.1",
+    "unplugin-vue-components": "^0.17.2",
+    "vite": "^2.6.4"
+  }
+}
