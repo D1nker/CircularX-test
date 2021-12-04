@@ -1,5 +1,11 @@
+npm-debug.log
 node_modules
+public
+shared
 .DS_Store
-dist
-dist-ssr
-*.local
+.idea
+.sass-cache
+app/logs
+shared
+.vscode
+.env

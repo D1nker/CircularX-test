@@ -8,6 +8,6 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({ imports: ['vue', 'vue-router'] }),
-    Components()
+    Components({ dirs: ['src/components'], extensions: ['vue'], deep: true })
   ]
 })
