@@ -5,18 +5,17 @@ Hello - ceci est un simple fichier texte comprenant mon avancé et/ou les points
 Les points qui ont été bloquants :
 
 - Config global de l'app (choix plugin)
-- Vue-Router v4
+- Vue-Router v4 (notamment le passage de props)
 - L'extension chrome Vue qui ne m'affichait aucune trace de debug
-- CSS
-- J'en ai peut-être trop fait avec Axios & le PostRepository, j'aurai pu simplement utilisé le wrapper fetch()
+- CSS (tailwind)
 
 
-J'ai voulu tenté cet exercice avec 2 technos que je maitrise peu : Vue 3 et Tailwind - je pense que cela m'a été préjudiciable :)
+J'ai voulu tenté cet exercice avec 2 nouvelles technos : Vue 3 et Tailwind - je pense que cela m'a été préjudiciable :)
 
 Bonne lecture, et merci.
 
 
-EDIT : J'ai pris l'initiave de finir cet excercice en rajoutant 2h grosse heures supplémentaire, j'avoue avoir été frusté par ma prestation de Samedi matin (ou je m'étais arreté à la 2ème page seulement)
+EDIT : J'ai pris l'initiave de finir cet excercice en rajoutant 2 grosses heures supplémentaires, j'avoue avoir été frusté par ma prestation de Samedi matin (ou je m'étais arreté à la 2ème page seulement)
 
 Quentin F
 
