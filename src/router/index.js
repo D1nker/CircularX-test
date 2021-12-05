@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import PostsList from '../components/PostsList.vue';
-import PostDetails from '../components/PostDetails.vue';
+import AuthorDetails from '../components/Author/AuthorDetails.vue';
+import CategoryDetails from '../components/Category/CategoryDetails.vue';
+import EditPost from '../components/Post/EditPost.vue';
+import NewPost from '../components/Post/NewPost.vue';
+import PostDetails from '../components/Post/PostDetails.vue';
+import PostsList from '../components/Post/PostsList.vue';
 
 const routes = [
   {
@@ -9,11 +13,36 @@ const routes = [
     component: PostsList,
   },
   {
-    path: '/posts/:id',
+    path: '/posts/:postId',
     name: 'PostDetails',
     component: PostDetails,
     props: true
-  }
+  },
+  {
+    path: '/new',
+    name: 'NewPost',
+    component: NewPost,
+  },
+  {
+    path: '/posts/edit/:postId',
+    name: 'EditPost',
+    component: EditPost,
+    props: (route) => ({
+      ...route.params
+    })
+  },
+  {
+    path: '/author/:authorId',
+    name: 'AuthorDetails',
+    component: AuthorDetails,
+    props: true
+  },
+  {
+    path: '/category/:categoryId',
+    name: 'CategoryDetails',
+    component: CategoryDetails,
+    props: true
+  },
 ];
 
 const router = createRouter({
