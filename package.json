@@ -5,23 +5,29 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest --coverage"
   },
   "dependencies": {
     "axios": "^0.24.0",
     "eslint-config-vue-global-api": "^0.4.1",
+    "pinia": "^2.0.9",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/test-utils": "^2.0.0-rc.18",
     "autoprefixer": "^10.4.0",
     "eslint": "^8.4.0",
     "eslint-plugin-vue": "^8.1.1",
+    "happy-dom": "*",
     "postcss": "^8.4.4",
     "tailwindcss": "^2.2.19",
     "unplugin-auto-import": "^0.5.1",
     "unplugin-vue-components": "^0.17.2",
-    "vite": "^2.6.4"
+    "vite": "^2.6.4",
+    "vitest": "^0.0.113"
   }
 }

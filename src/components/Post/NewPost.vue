@@ -1,6 +1,11 @@
 <script setup>
 import { CategoryRepository, PostRepository, UserRepository } from '../../repositories';
+import { usePostStore } from '../../store/post';
 
+const test = usePostStore();
+console.log(test);
+
+test.test();
 const state = reactive({
   users: [],
   categories: [],

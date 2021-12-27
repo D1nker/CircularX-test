@@ -24,6 +24,8 @@ onMounted(async () => {
     post.totalComment = matchingTotalComments;
   });
 });
+  defineExpose(state)
+  console.log(state);
 </script>
 
 <template>

@@ -1,6 +1,7 @@
 <script setup>
 import { CategoryRepository, CommentRepository, PostRepository, UserRepository } from '../../repositories';
-
+import { useUserStore } from '../../store/user';
+// import { storeToRefs } from 'pinia';
 const props = defineProps({
   authorId: {
     type: String,
@@ -8,6 +9,9 @@ const props = defineProps({
   }
 });
 
+const test = useUserStore();
+console.log(test);
+  // const { counter, doubleCount } = storeToRefs(main)
 const state = reactive({
   posts: [],
   comments: [],

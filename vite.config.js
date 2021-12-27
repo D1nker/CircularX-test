@@ -9,5 +9,9 @@ export default defineConfig({
     vue(),
     AutoImport({ imports: ['vue', 'vue-router'] }),
     Components({ dirs: ['src/components', 'src/views', 'src/repositories'], extensions: ['vue', 'js'], deep: true })
-  ]
+  ],
+  test: {
+    global: true,
+    environment: 'happy-dom',
+  },
 });

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import AuthorDetails from '../components/Author/AuthorDetails.vue';
 import CategoryDetails from '../components/Category/CategoryDetails.vue';
 import EditPost from '../components/Post/EditPost.vue';
+import Hello from '../components/Hello/Hello.vue';
 import NewPost from '../components/Post/NewPost.vue';
 import PostDetails from '../components/Post/PostDetails.vue';
 import PostsList from '../components/Post/PostsList.vue';
@@ -11,6 +12,11 @@ const routes = [
     path: '/',
     name: 'PostsList',
     component: PostsList,
+  },
+  {
+    path: '/hello',
+    name: 'Hello',
+    component: Hello,
   },
   {
     path: '/posts/:postId',
