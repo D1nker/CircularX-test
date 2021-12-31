@@ -40,7 +40,7 @@ const submit = () => {
     New Post
   </div>
   <form
-    class="editor mx-auto w-10/12 flex flex-col text-gray-800 bg-white rounded-lg shadow-md p-4 shadow-lg max-w-2xl"
+    class="editor mx-auto w-10/12 flex flex-col text-gray-800 bg-white rounded-lg p-4 shadow-lg max-w-2xl"
     @submit.prevent="submit"
   >
     <input

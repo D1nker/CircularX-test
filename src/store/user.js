@@ -1,4 +1,5 @@
 import { defineStore, acceptHMRUpdate } from 'pinia'
+import { UserRepository } from '../repositories'
 
 /**
  * Simulate a login
@@ -14,7 +15,7 @@ function apiLogin(a, p) {
 export const useUserStore = defineStore({
   id: 'user',
   state: () => ({
-    name: 'Eduardo',
+    name: 'Q',
     isAdmin: true,
   }),
   actions: {
@@ -24,6 +25,16 @@ export const useUserStore = defineStore({
         isAdmin: false,
       })
       // we could do other stuff like redirecting the user
+    },
+    async create() {
+      const response = (await UserRepository.create()).data;
+      const { firstName, lastName, email, password } = response;
+      this.$patch({
+        firstName,
+        lastName,
+        email,
+        password
+      })
     },
     async login(user, password) {
       const userData = await apiLogin(user, password)

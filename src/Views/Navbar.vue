@@ -1,5 +1,8 @@
 <template>
-  <nav class="w-full py-6 bg-white w-screen">
+  <nav
+    v-if="!forbiddenRoutes.includes(route.name)"
+    class="py-6 bg-white w-screen"
+  >
     <div class="flex items-center justify-between mx-auto xl:max-w-7xl lg:max-w-5xl md:max-w-3xl md:px-2 px-4">
       <section class="flex items-center text-gray-900 space-x-2">
         <svg
@@ -32,3 +35,12 @@
     </div>
   </nav>
 </template>
+
+
+<script setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const forbiddenRoutes = ['SigninForm', 'SignupForm'];
+</script>

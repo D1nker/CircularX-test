@@ -6,8 +6,20 @@ import Hello from '../components/Hello/Hello.vue';
 import NewPost from '../components/Post/NewPost.vue';
 import PostDetails from '../components/Post/PostDetails.vue';
 import PostsList from '../components/Post/PostsList.vue';
+import SigninForm from '../components/Sign/SigninForm.vue';
+import SignupForm from '../components/Sign/SignupForm.vue';
 
 const routes = [
+  {
+    path: '/signin',
+    name: 'SigninForm',
+    component: SigninForm
+  },
+  {
+    path: '/signup',
+    name: 'SignupForm',
+    component: SignupForm
+  },
   {
     path: '/',
     name: 'PostsList',
